@@ -1,0 +1,138 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ body{
+       background-color:rgba(165, 255, 153, 0.753);
+       color: #111827;
+} 
+
+/* Navbar */
+.navbar{
+    background-color: #334155;
+    color: #ffffff;
+    padding: 16px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.navbar nav a{
+ color: #ffffff;
+ margin-left: 25px;
+ text-decoration: none;
+ font-size: 15px;
+ transition: opacity 0.3s ease;
+}
+.navbar nav a:hover{
+    opacity: 0.7;
+}
+
+/* Hero section */
+.hero{
+    min-height: calc(100vh - 72px);
+    background: linear-gradient(to bottom,#38bdf8, #0f172a);
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+
+}
+.hero-content{
+    max-width: 600px;
+    text-align: left;
+    font-family: monospace;
+}
+.hero-content h1{
+    font-size: 60px;
+    margin-bottom: 16px;
+    color:oklch(84.484% 0.2338 134.466);
+}
+.hero p{
+    font-size: 45px;
+    color:oklch(81.879% 0.25942 143.511);
+    margin-bottom: 32px;
+    line-height: 1.6;
+}
+.hero h4{
+    font-size: 45px;
+    color:oklch(82.551% 0.21452 150.906);
+    margin-bottom: 32px;
+    line-height: 1.6;
+}
+/* card */
+.cards{
+    background: linear-gradient(to bottom, #0f172a, #0f172a);
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    gap: 35px;
+    padding: 60px 30px;
+}
+.card{
+     background: #90bcb0;
+   width: 320px;
+   padding: 35px;
+   text-align: center;
+   color: #ffffff;
+   border-radius:12px;
+   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+   transition: transfrom 0.3s ease, box-shadow 0.3s ease;
+   cursor: pointer;
+}
+
+.card:hover{
+    transform: translate(-8px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* cta-button */
+.cta-btn{
+    padding: 12px 28px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2563eb;
+    color: #ffffff;
+    cursor: pointer;
+}
+.cta-btn:hover{
+    border-color: #1e40af;
+}
+
+/* footer */
+*{box-sizing: border-box;}
+
+html, body{
+  height: 100%;
+  margin: 0%;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.footer{
+    background:#0f172a;
+    background-color: black;
+    color: #ffffff;
+    padding: 18px;
+    font-size: 14px;
+}
+/* Reponsive */
+@media(max-width:768px){
+    .navbar{
+        padding: 16px 20px;
+    }
+    .hero-content h1{
+        font-size: 32px;
+    }
+}
