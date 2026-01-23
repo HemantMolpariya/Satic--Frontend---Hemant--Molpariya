@@ -51,3 +51,24 @@ navLinks.forEach((link) =>{
     });
  });
 });
+
+// smooth scroll for nav link
+const nav_Links = document.querySelectorAll("nav a");
+
+navLinks.forEach((link) => {
+    link.addEventListener("click", (e) => {
+        const targetId = link.getAttribute("href");
+
+        // Only run smooth scroll if the link points to an ID (starts with #)
+        if (targetId.startsWith("#") && targetId.length > 1) {
+            e.preventDefault();
+            const targetSection = document.querySelector(targetId);
+
+            if (targetSection) {
+                targetSection.scrollIntoView({
+                    behavior: "smooth",
+                });
+            }
+        }
+    });
+});
