@@ -207,6 +207,32 @@ h2{
    background-color: #0056b3;
 }
 
+/* Terms */
+.term-section{
+    padding: 20px;
+    background: linear-gradient(to bottom,#38bdf8, #0f172a);
+    color: white;
+}
+
+.term-container{
+    display: grid;
+    align-items:left;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.term-text h3{
+   font-size: 50px;
+   margin-bottom: 15px;
+   color: whitesmoke;
+}
+
+.term-text p{
+    font-size: 30px;
+    color:white;
+    max-width: 500px;
+}
+
 /* cta-button */
 .secondary1-btn{
     padding: 15px 32px;
