@@ -54,6 +54,7 @@ navLinks.forEach((link) =>{
 
 // humburger
 const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("navLinks");
 // Toggle menu
 hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("show");
