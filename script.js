@@ -54,14 +54,14 @@ navLinks.forEach((link) =>{
 
 // humburger
 const hamburger = document.getElementById("hamburger");
-const navLinks = document.getElementById("navLinks");
+const nav_links = document.getElementById("navLinks");
 // Toggle menu
 hamburger.addEventListener("click", () => {
-  navLinks.classList.toggle("show");
+  nav_links.classList.toggle("show");
 
   // Disable background scroll when menu is open
   document.body.style.overflow =
-    navLinks.classList.contains("show") ? "hidden" : "auto";
+  nav_links.classList.contains("show") ? "hidden" : "auto";
 });
 
 
