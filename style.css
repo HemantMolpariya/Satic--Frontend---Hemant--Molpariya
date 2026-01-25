@@ -34,6 +34,11 @@
     font-weight: 600;
     letter-spacing: 1px;
 }
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
 .navbar nav a{
  color: #ffffff;
  margin-left: 25px;
