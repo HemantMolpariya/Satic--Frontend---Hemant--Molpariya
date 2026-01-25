@@ -104,26 +104,21 @@
 }
 
 /* About */
-.about-img{
-    width: 100%;
-    height: 180px;
-    border-radius: 16px;
-    box-shadow: 0 30px 60px rgba(0,0, 0, 0.6);
+img{
+    float: right;
+    flex-wrap: wrap;
 }
-section{
-    width: 100%;
-    font-family:'poppins',sans-serif;
+.about-section{
+    padding:20px;
+    background: linear-gradient(to bottom,#38bdf8, #0f172a);
+    color: white;
 }
+
 .about-cotainer{
     display: flex;
     align-items: center;
     gap: 60px;
     flex-wrap: wrap;
-}
-.about-section{
-    padding: 100px 10%;
-    background: linear-gradient(to bottom,#38bdf8, #0f172a);
-    color: white;
 }
 
 .about-text h3{
@@ -134,10 +129,11 @@ section{
  -webkit-text-fill-color: transparent;
 }
 .about-text p{
- font-size: 50px;
+ font-size: 30px;
  color: #cfcfcf;
  max-width: 500px;
 }
+
 
 /* card */
 .card-section {
