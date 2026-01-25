@@ -21,33 +21,33 @@
   color: white;
   cursor: pointer;
 }
-.navbar{
-    background-color: #334155;
-    color: #ffffff;
-    padding: 16px 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 25px;
+  background-color: #222;
+  color: #fff;
 }
-.logo{
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 1px;
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
 }
+
 .nav-links {
   list-style: none;
   display: flex;
   gap: 20px;
 }
-.navbar nav a{
- color: #ffffff;
- margin-left: 25px;
- text-decoration: none;
- font-size: 15px;
- transition: opacity 0.3s ease;
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
 }
-.navbar nav a:hover{
-    opacity: 0.7;
+
+.nav-links a.active {
+  border-bottom: 2px solid #fff;
 }
 
 /* Hero section */
