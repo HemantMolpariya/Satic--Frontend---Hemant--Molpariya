@@ -52,6 +52,18 @@ navLinks.forEach((link) =>{
  });
 });
 
+// humburger
+const hamburger = document.getElementById("hamburger");
+// Toggle menu
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+
+  // Disable background scroll when menu is open
+  document.body.style.overflow =
+    navLinks.classList.contains("show") ? "hidden" : "auto";
+});
+
+
 // smooth scroll for nav link
 const nav_Links = document.querySelectorAll("nav a");
 
