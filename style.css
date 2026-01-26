@@ -14,13 +14,15 @@
 
 /* Hamburger */
 .hamburger {
-  display: none;
+  display: none; /* Hidden by default on desktop */
   background: none;
   border: none;
-  font-size: 22px;
+  font-size: 30px;
   color: white;
   cursor: pointer;
+  z-index: 1001; /* Stay above the menu */
 }
+
 .navbar {
   display: flex;
   align-items: center;
@@ -28,8 +30,10 @@
   padding: 15px 25px;
   background-color: #222;
   color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
-
 .logo {
   font-size: 20px;
   font-weight: bold;
@@ -422,3 +426,35 @@ body{
         font-size: 32px;
     }
 }
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block; /* Show hamburger on mobile */
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Hidden off-screen by default */
+    width: 70%;
+    height: 100vh;
+    background-color: #222;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+    gap: 40px;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.5);
+  }
+
+  /* This class is toggled by JavaScript */
+  .nav-links.show {
+    right: 0; /* Slide in from right */
+  }
+
+  .nav-links li {
+    font-size: 24px;
+  }
+}
+
+
